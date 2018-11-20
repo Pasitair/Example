@@ -1,0 +1,93 @@
+* {
+    font-family: Arial;
+
+}
+
+.direct-speech {
+    color: blue;
+    font-style: italic;
+}
+
+#header {
+    text-decoration: underline rgb(255, 0, 0) double;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#part1,
+#part2,
+#part3 {
+    text-shadow: 3px 3px 3px black, -3px -3px 3px blue;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding-left: 10px;
+    border-bottom: 3px dotted #000;
+    margin-left: -10px;
+    background-color: rgba(254, 254, 255, 0.8);
+    padding: 15px;
+    margin-left: -10px;
+}
+
+p {
+    text-indent: 10px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contents {
+    list-style-type: square;
+    text-transform: uppercase;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+
+}
+
+p:hover {
+    border-left: 3px solid black;
+}
+
+img {
+    width: 100%;
+}
+h2+p::first-letter{
+    font-size: 48px; 
+    color: olive; 
+}
+h2:hover::before,h1:hover::before{
+    content: "#";
+    color:red;
+}
+p::selection{
+    color:red;
+    background-color: black;
+}
+img,h1,h2{
+    margin: 45px 0px;
+}
+p:not(.direct-speech)::first-line
+{
+    font-style: italic;
+}
+#contents-block{
+position: absolute;
+z-index: 1;
+width: 150px;
+margin-top: 150px;
+border-bottom: 3px dotted #000;     
+}
+#story {
+    padding-left: 14px;
+    border-left: 3px dotted black;
+    margin-left: 150px;
+    position: sticky;
+}
